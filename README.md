@@ -13,5 +13,3 @@ That's it. The PR-Pilot bot will analyze your changes and post its briefing on y
 ---
 
 ### ⭐ Like what you see? [Star the main project on GitHub!](https://github.com/minhkhoango/pr-pilot) ⭐
-
-DELETE!
