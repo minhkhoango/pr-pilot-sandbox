@@ -1,0 +1,19 @@
+name: "PR-Pilot Briefing"
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run PR-Pilot analysis
+        uses: minhkhoango/pr-pilot@v1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
